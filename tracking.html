@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tracking Pengiriman - Toko Buku Pustaka</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="tracking-container">
+    <h2>Tracking Pengiriman Pesanan</h2>
+    <p><a href="dashboard.html" class="link-kembali">&larr; Kembali ke Dashboard</a></p>
+    
+    <div style="margin-top: 15px;">
+      <label>Masukkan Nomor Resi / Kode Pesanan:</label>
+      <input type="text" id="input-resi" placeholder="Contoh: RESI001" style="margin-top: 5px;">
+      <button type="button" id="btn-tracking">Cek Status</button>
+    </div>
+
+    <div id="hasil-tracking" style="margin-top: 20px; padding: 10px; background: #f9f9f9; border-radius: 4px; display: none;">
+      <!-- Hasil tracking akan muncul di sini -->
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

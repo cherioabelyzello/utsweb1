@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login Toko Buku</h2>
+    <form id="form-login">
+      <label>Email</label>
+      <input type="email" id="login-email" required>
+      
+      <label>Password</label>
+      <input type="password" id="login-password" required>
+      
+      <button type="submit">Login</button>
+    </form>
+    <div class="link-bawah">
+      <button type="button" id="btn-lupa">Lupa Password</button>
+      <button type="button" id="btn-daftar">Daftar</button>
+    </div>
+  </div>
+
+  <!-- Modal Lupa Password -->
+  <div id="modal-lupa" class="modal">
+    <div class="modal-content">
+      <span id="close-lupa" class="close">&times;</span>
+      <h3>Reset Password</h3>
+      <p>Fitur pemulihan password akun.</p>
+    </div>
+  </div>
+
+  <!-- Modal Daftar -->
+  <div id="modal-daftar" class="modal">
+    <div class="modal-content">
+      <span id="close-daftar" class="close">&times;</span>
+      <h3>Pendaftaran Akun</h3>
+      <p>Form pendaftaran pengguna baru.</p>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+
+
+  <!-- Contoh bagian form di checkout.html -->
+<form id="form-checkout">
+  <h3>Form Pemesanan Buku</h3>
+  <div class="form-group">
+    <label>Nama Pemesan:</label>
+    <input type="text" id="nama-pemesan" required>
+  </div>
+  <div class="form-group">
+    <label>Alamat Pengiriman:</label>
+    <textarea id="alamat-pengiriman" required></textarea>
+  </div>
+  <div class="form-group">
+    <label>Metode Pembayaran:</label>
+    <select id="metode-pembayaran">
+      <option value="Transfer Bank">Transfer Bank</option>
+      <option value="GoPay">GoPay / QRIS</option>
+      <option value="COD">Bayar di Tempat (COD)</option>
+    </select>
+  </div>
+  <button type="submit" class="btn-submit">Proses Pesanan</button>
+</form>
+</body>
+</html>
